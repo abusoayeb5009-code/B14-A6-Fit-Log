@@ -1,0 +1,618 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #090909;
+    color: #ffffff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #090909;
+    border-bottom: 1px solid #242424;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    color: #d9ff00;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 45px;
+}
+
+.navbar nav a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+    color: #d9ff00;
+}
+
+   /* body {
+      background-color: #0f172a; /* ব্যাকগ্রাউন্ড কালার */
+    /*  font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    /* }* */
+
+    /* নেভবার কন্টেইনার */
+    /*.navbar {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      background-color: #0d0f12; /* ডার্ক ব্যাকগ্রাউন্ড */
+     /* padding: 10px 20px;
+      border-radius: 24px;
+      border: 1px solid #1e293b;
+    /* }* */
+
+    /* নেভ আইটেম লেআউট */
+    /*.nav-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* হলুদ ব্যাজ (Plan) */
+    /*.badge-yellow {
+      background-color: #eab308; /* হলুদ কালার */
+      /*color: #000000;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    /* ডার্ক ব্যাজ (Saved) */
+   /* .badge-dark {
+      background-color: #1e293b; /* ডার্ক গ্রে কালার */
+     /* color: #ffffff;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid #334155;
+    }
+
+
+  <div class="navbar">
+    <!-- Plan Item -->
+    <div class="nav-item">
+      <span>Plan</span>
+      <span class="badge-yellow">0</span>
+    </div>
+
+    <!-- Saved Item -->
+    <div class="nav-item">
+      <span>Saved</span>
+      <span class="badge-dark">0</span>
+    </div>
+  </div>
+
+
+.profile {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #444;
+    border-radius: 50%;
+
+    color: #d9ff00;
+    font-size: 13px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 430px;
+
+    padding: 80px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #d9ff00;
+    font-size: 12px;
+    font-weight: 800;
+
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 68px);
+    line-height: .95;
+
+    font-weight: 1000;
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    color: #999;
+    line-height: 1.6;
+    font-size: 15px;
+
+    max-width: 540px;
+
+    margin-bottom: 25px;
+}
+
+
+/* BUTTON */
+
+.primary-btn {
+    background: #d9ff00;
+    color: #000;
+
+    border: none;
+    padding: 14px 22px;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(217, 255, 0, .2);
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    width: 330px;
+    height: 330px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    filter: grayscale(100%);
+}
+
+
+/* =========================
+   LIBRARY
+========================= */
+
+.library {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 40px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.section-heading p {
+    color: #777;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   WORKOUT GRID
+========================= */
+
+.workout-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================
+   WORKOUT CARD
+========================= */
+
+.workout-card {
+    background: #111;
+
+    border: 1px solid #222;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: .25s;
+}
+
+.workout-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #d9ff00;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, .5);
+}
+
+
+.workout-card > img {
+    width: 100%;
+    height: 170px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.card-content {
+    padding: 17px;
+}
+
+
+/* TAGS */
+
+.tags {
+    display: flex;
+    gap: 7px;
+
+    margin-bottom: 12px;
+}
+
+.tags span {
+    background: #d9ff00;
+    color: #000;
+
+    padding: 4px 8px;
+
+    border-radius: 20px;
+
+    font-size: 8px;
+    font-weight: 900;
+}
+
+
+/* CARD TITLE */
+
+.card-content h3 {
+    font-size: 14px;
+
+    font-weight: 900;
+
+    margin-bottom: 7px;
+}
+
+.muscle {
+    color: #777;
+    font-size: 11px;
+
+    margin-bottom: 17px;
+}
+
+
+/* CARD INFO */
+
+.card-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #777;
+
+    font-size: 9px;
+
+    border-top: 1px solid #222;
+
+    padding-top: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 80px;
+
+    padding: 45px 7%;
+
+    border-top: 1px solid #222;
+
+    text-align: center;
+}
+
+.footer-logo {
+    font-weight: 900;
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #666;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.footer-links {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #777;
+
+    text-decoration: none;
+
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: #d9ff00;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .workout-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 60px 25px;
+    }
+
+    .library {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 50px 20px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .workout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .library {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111315;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 90px;
+    background: #181a1d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 70px;
+    border-bottom: 1px solid #25282b;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    color: #eaff00;
+    font-size: 25px;
+    transform: rotate(-25deg);
+}
+
+/* Center Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-menu a {
+    color: #b7b7b7;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-menu a.active {
+    color: #eaff00;
+    background: #272a20;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+/* Right Side */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-right a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.count {
+    margin-left: 5px;
+    color: #aaa;
+}
+
+.count.yellow {
+    background: #eaff00;
+    color: #111;
+    width: 22px;
+    height: 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+}
