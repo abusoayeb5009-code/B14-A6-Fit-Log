@@ -1,5 +1,6 @@
+
 import { getWorkoutById } from "@/utils/api";
-import WorkoutDetailsClient from "@/app/workout/WorkoutDetailsClient";
+import WorkoutDetailsClient from "../WorkoutDetailsClient";
 import type { Workout } from "@/types";
 
 export default async function WorkoutDetailsPage({
